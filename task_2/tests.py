@@ -1,9 +1,12 @@
-from main import CustomList
+""" Test for custom list """
 import unittest as ut
+from main import CustomList
 
 
 class TestValidOut(ut.TestCase):
+    """ Testing working custom list """
     def test_math(self):
+        """ Testing math methods """
         list1 = CustomList([1, 2, 3, 4])
         list2 = CustomList([-3, 0, 9])
         list3 = [4, 5, 6, 7, 8]
@@ -14,6 +17,7 @@ class TestValidOut(ut.TestCase):
         self.assertEqual(list2 - list3, [-7, -5, 3, -7, -8])
 
     def test_comparison(self):
+        """ Testing comparisons """
         list1 = CustomList([1, 2, 3, 4])
         list2 = CustomList([-3, 0, 9])
         list3 = [4, 5, 6, 7, 8]
