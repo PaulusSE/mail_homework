@@ -36,3 +36,4 @@ if __name__ == '__main__':
     # inst.line()  # ошибка
     print('custom_x', inst.custom_x)    # 50
     print('custom_line()', inst.custom_line())  # 100
+    print('custom_val', inst.custom_val)
